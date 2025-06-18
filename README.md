@@ -103,7 +103,7 @@ This test measures the glossiness of the powder-coated film. Gloss is evaluated 
 **Procedure:**  
 The glossmeter device is first calibrated. It is then placed on the coated panel, and a reading is taken. The built-in light source shines on the surface at a specified angle, and the reflected light reaches the sensor on the opposite side of the device. The intensity of the reflected light is compared to the source, and a numerical value is calculated in **Gloss Units (GU)**.
 
-![Figure 2: Measuring Gloss with a Glossmeter](images/glossmeter.jpg)
+![Figure 2: Measuring Gloss with a Glossmeter](https://github.com/esrakara5/Trend_Analysis/blob/main/Visualizations/GLOSSMETRE.png)
 
 ---
 
@@ -116,7 +116,7 @@ This test determines the particle size distribution of powder coatings using las
 **Procedure:**  
 The device is powered on. A sample is added to the chamber using a spatula, and the lid is closed. The test is started via the connected computer by entering the sample name. Once completed, the distribution report is displayed. The closer the values are to the specified range, the more homogeneous the distribution. Coarse or uneven particle sizes can negatively affect gloss.
 
-![Figure 3: Particle Size Analyzer](images/particle-size-analyzer.jpg)
+![Figure 3: Particle Size Analyzer](https://github.com/esrakara5/Trend_Analysis/blob/main/Visualizations/tdoc.png)
 
 ---
 
@@ -143,9 +143,9 @@ Readings are evaluated with the **Delta E (ΔE)** value, which measures the visi
 
 If color deviation is found, corrective pigments are added to bring the product back within specifications.
 
-![Figure 4: Spectrophotometer Device](images/spectrophotometer.jpg)
+![Figure 4: Spectrophotometer Device](https://github.com/esrakara5/Trend_Analysis/blob/main/Visualizations/spektro.png)
 
-![Figure 5: ΔE Calculation Result](images/delta-e-result.jpg)
+![Figure 5: ΔE Calculation Result](https://github.com/esrakara5/Trend_Analysis/blob/main/Visualizations/testresult.png)
 
 ---
 
@@ -173,12 +173,14 @@ To enable detailed observation, a comprehensive table was first created. The col
 - `Result`
 - `Result Status`
 
-📊 **Figure 6.** Trend Analysis – Power BI Dashboard  
-📊 **Figure 7.** Trend Analysis Table View
+![Figure 6. Trend Analysis – Power BI Dashboard](https://github.com/esrakara5/Trend_Analysis/blob/main/Visualizations/trendanalysis.png)
+
+
+![Figure 7. Trend Analysis Table View](https://github.com/esrakara5/Trend_Analysis/blob/main/Visualizations/ta_table.png)
 
 To highlight whether the `Result` value falls within the specification range, a calculated column named `Result Filter` was created in Power BI Query Editor. This checks if the value lies between `Inner Min` and `Inner Max`. Based on this filter, **conditional formatting** with icons was applied to the `Result` column.
 
-🔍 **Figure 8.** Conditional Formatting for Result Status
+![Figure 8. Conditional Formatting for Result Status](https://github.com/esrakara5/Trend_Analysis/blob/main/Visualizations/kb.png)
 
 To allow users to dynamically filter and explore data, several **slicers** were added:
 
@@ -189,16 +191,17 @@ To allow users to dynamically filter and explore data, several **slicers** were 
 
 Users are restricted to selecting only **one test type at a time** to avoid confusion. Search functionality is also enabled within slicers to handle the high volume of order and part numbers.
 
-🎛️ **Figure 9.** Slicers for Trend Analysis
+![Figure 9. Slicers for Trend Analysis](https://github.com/esrakara5/Trend_Analysis/blob/main/Visualizations/slicer.png)
 
 A pie chart was created to display the **specification distribution** of results based on the selected filters, along with percentage values.
 
-🥧 **Figure 10.** Specification Distribution Chart
+![Figure 10. Specification Distribution Chart](https://github.com/esrakara5/Trend_Analysis/blob/main/Visualizations/spek_dis.png)
 
 A **line chart** was implemented to track deviation trends. It visualizes whether results deviate from specifications and by how much across tests. The X-axis shows `Analysis No`, while the Y-axis displays `Avg Result`, `Avg Inner Max`, and `Avg Inner Min`.
 
-📈 **Figure 11.** Line Chart – Trend Analysis for Gloss Test  
-📈 **Figure 12.** Specification Analysis Visualization
+![Figure 11. Line Chart – Trend Analysis Graph](https://github.com/esrakara5/Trend_Analysis/blob/main/Visualizations/ta_grap.png)  
+
+![Figure 12. Specification Analysis Visualization](https://github.com/esrakara5/Trend_Analysis/blob/main/Visualizations/spec_analysis.png)
 
 ---
 
@@ -208,15 +211,15 @@ All out-of-spec results are displayed in a detailed, easily interpretable layout
 
 A **Top N slicer** was created to allow filtering the **Top 20 products with the highest non-conformance** values.
 
-📊 **Figure 13.** Top 20 Products with Most Deviations
+![Figure 13. Top 20 Products with Most Deviations](https://github.com/esrakara5/Trend_Analysis/blob/main/Visualizations/top20.png)
 
 A **donut chart** visualizes the distribution of out-of-spec values across different test types.
 
-🍩 **Figure 14.** Test-Wise Distribution of Out-of-Spec Results
+![Figure 14. Test-Wise Distribution of Out-of-Spec Results](https://github.com/esrakara5/Trend_Analysis/blob/main/Visualizations/donut.png)
 
 The same formatted table and icons from the Trend Analysis page are used here as well. A **bar chart** comparing in-spec and out-of-spec results by test type is also included to allow easy benchmarking.
 
-📊 **Figure 15.** Comparison of Test Results by Specification Status
+![Figure 15. Comparison of Test Results by Specification Status](https://github.com/esrakara5/Trend_Analysis/blob/main/Visualizations/comp.png)
 
 ---
 
